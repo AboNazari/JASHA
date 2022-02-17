@@ -1,10 +1,10 @@
 import React from "react";
-
+import Button from "../components/Button";
 const Contact = () => {
   return (
     <div className="w-full h-full lg:h-screen overflow-hidden flex flex-col md:items-center p-10 md:pr-0 justify-center ">
       <div className="w-4/5 h-5/6 bg-slate-300 rounded-lg flex  md:flex-row">
-        <div className="w-2/4 p-9">
+        <div className="w-2/4 p-9 ">
           <h3>We’d love to hear from you!</h3>
           <ul>
             <li>
@@ -25,8 +25,22 @@ const Contact = () => {
             <input
               type="text"
               placeholder="First Name"
-              className="w-full p-4 rounded-xl"
+              className="w-full p-4 rounded-xl shadow-md my-4"
             />
+            <input
+              type="text"
+              placeholder="Email"
+              className="w-full p-4 rounded-xl shadow-md my-4"
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              className="w-full p-4 rounded-xl shadow-md my-4"
+              placeholder="Your Message"
+            ></textarea>
+            <Button text="Send Message" />
           </form>
         </div>
       </div>
