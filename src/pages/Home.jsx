@@ -4,7 +4,9 @@ import Benefits from "../layouts/Benefits";
 //layouts
 import Hero from "../layouts/Hero";
 import Mission from "../layouts/Mission";
-import Contact from "./Contact";
+import About from "../layouts/About";
+import Donation from "../layouts/Donation";
+import Counter from "../layouts/Counter";
 
 const Home = () => {
   return (
@@ -12,7 +14,9 @@ const Home = () => {
       <Hero />
       <Mission />
       <Benefits />
-      <Contact />
+      <About />
+      <Donation />
+      <Counter />
     </div>
   );
 };
