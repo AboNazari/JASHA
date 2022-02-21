@@ -1,36 +1,50 @@
 import React from "react";
 import Button from "../components/Button";
+import { ReactComponent as Email } from "../images/email.svg";
+import { ReactComponent as FaceBook } from "../images/Facebook.svg";
+import { ReactComponent as Instagram } from "../images/Instagram.svg";
+
 const Contact = () => {
   return (
-    <div className="w-full h-full lg:h-screen overflow-hidden flex flex-col md:items-center p-10 md:pr-0 justify-center ">
-      <div className="w-4/5 h-5/6 bg-slate-300 rounded-lg flex  md:flex-row">
-        <div className="w-2/4 p-9 ">
-          <h3>We’d love to hear from you!</h3>
-          <ul>
+    <div className="w-full h-full lg:h-screen overflow-hidden flex items-center justify-center ">
+      <div className="w-11/12 lg:w-10/12 rounded-xl flex  shadow-lg flex-col lg:flex-row mb-4">
+        <div className="w-full lg:w-2/5 p-9 rounded-xl">
+          <h3 className="lg:text-5xl text-3xl font-primary leading-relaxed lg:mx-8 mx-4">
+            We’d love to hear from you!
+          </h3>
+          <ul className="lg:my-28 mt-10 lg:mx-10 md:text-2xl text-xl leading-relaxed font-primary">
             <li>
-              {" "}
-              <img src="" alt="" /> public@jahsa.life
+              <a href="#" className="flex items-center">
+                <Email className="mr-4 mt-2" /> public@jahsa.life
+              </a>
             </li>
             <li>
-              <img src="" alt="" /> jasha.life
+              <a href="#" className="flex items-center  mt-4">
+                <Instagram className="mr-4 mt-2" /> jasha.life
+              </a>
             </li>
             <li>
-              <img src="" alt="" /> jasha.life
+              <a href="#" className="flex items-center mt-4">
+                <FaceBook className="mr-4 mt-2" /> jasha.life
+              </a>
             </li>
           </ul>
-          <p>Interested in collaborating and supporting our vision ?</p>
+          <p className="text-xl lg:px-10 lg:mt-32 mt-10 font-primary">
+            Interested in collaborating and supporting our vision ?
+          </p>
         </div>
-        <div className="w-2/4 bg-slate-200">
-          <form className=" m-10 p-12">
+
+        <div className="w-full lg:w-3/5 bg-grayLight rounded-xl">
+          <form className="md:m-10 md:p-12 p-8 font-primary">
             <input
               type="text"
               placeholder="First Name"
-              className="w-full p-4 rounded-xl shadow-md my-4"
+              className="w-full p-4 rounded-xl shadow-md my-4 "
             />
             <input
               type="text"
               placeholder="Email"
-              className="w-full p-4 rounded-xl shadow-md my-4"
+              className="w-full p-4 rounded-xl shadow-md my-4 "
             />
             <textarea
               name="message"
