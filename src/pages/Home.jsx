@@ -7,6 +7,7 @@ import Mission from "../layouts/Mission";
 import About from "../layouts/About";
 import Donation from "../layouts/Donation";
 import Counter from "../layouts/Counter";
+import Contact from "../layouts/Contact";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <About />
       <Donation />
       <Counter />
+      <Contact />
     </div>
   );
 };

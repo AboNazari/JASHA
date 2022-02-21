@@ -41,7 +41,7 @@ const Mission = () => {
           culpa ut quisquam vel molestiae, deleniti voluptatum eveniet amet quo
           facere ea quia aperiam dolores.
         </p>
-        <Button />
+        <Button text="Readmore..." />
       </motion.div>
       <motion.div
         variants={rightSlide}
