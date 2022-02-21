@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Button = () => {
+const Button = ({ text }) => {
   return (
     <>
-      <Link className="text-base block my-5 w-fit" to="/">
-        View more
+      <Link
+        className="text-base block my-5 w-fit bg-primary py-3 px-6 rounded-md text-white shadow-md"
+        to="/"
+      >
+        {text}
       </Link>
     </>
   );
