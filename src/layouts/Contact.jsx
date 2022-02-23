@@ -19,7 +19,11 @@ const Contact = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center  mt-4">
+              <a
+                href="https://abdullah-nazari.netlify.app/"
+                className="flex items-center  mt-4"
+                target="_blank"
+              >
                 <Instagram className="mr-4 mt-2" /> jasha.life
               </a>
             </li>
