@@ -8,6 +8,8 @@ const FAQ = () => {
   const onToOpenClick = (e) => {
     console.log(e.target.parentElement.id);
     const id = e.target.parentElement.id;
+    setIsOpen(!isOpen);
+
     if (id == QuestionsData.id) {
       console.log(QuestionsData.id + "This");
       setIsOpen(!isOpen);

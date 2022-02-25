@@ -12,17 +12,23 @@ const Question = ({ Question, Answer, open, openHandler, id }) => {
         <p>{Question}</p>{" "}
         {open ? (
           <Up
-            className=" transition transform hover:-translate-y-2 hover:duration-[400ms] ease-out hover:ease-in"
+            className=" transition transform hover:-translate-y-1 hover:duration-[400ms] ease-out hover:ease-in"
             onClick={openHandler}
           />
         ) : (
           <Down
-            className=" transition transform hover:translate-y-2 hover:duration-[400ms] ease-out hover:ease-in "
+            className=" transition transform hover:translate-y-1 hover:duration-[400ms] ease-out hover:ease-in "
             onClick={openHandler}
           />
         )}
       </li>
-      {open ? <p className="p-10 mt-4 text-xl font-primary">{Answer}</p> : ""}
+      {open ? (
+        <p className="md:p-5 p-3  text-xl font-primary first-letter:pl-6">
+          {Answer}
+        </p>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
