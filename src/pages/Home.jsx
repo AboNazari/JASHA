@@ -8,6 +8,7 @@ import About from "../layouts/About";
 import Donation from "../layouts/Donation";
 import Counter from "../layouts/Counter";
 import Contact from "../layouts/Contact";
+import FAQ from "../layouts/FAQ";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Donation />
       <Counter />
       <Contact />
+      <FAQ />
     </div>
   );
 };
