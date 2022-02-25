@@ -9,7 +9,7 @@ const Question = ({ Question, Answer, open, openHandler, id }) => {
         id={id}
         className="border-t-2 border-dark py-4 flex  justify-between text-lg px-5 items-center"
       >
-        <p>{Question}</p>{" "}
+        <p>{Question}</p>
         {open ? (
           <Up
             className=" transition transform hover:-translate-y-1 hover:duration-[400ms] ease-out hover:ease-in"
