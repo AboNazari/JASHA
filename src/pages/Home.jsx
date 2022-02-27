@@ -7,7 +7,8 @@ import Mission from "../layouts/Mission";
 import About from "../layouts/About";
 import Donation from "../layouts/Donation";
 import Counter from "../layouts/Counter";
-import Join from "../components/Join";
+import Contact from "../layouts/Contact";
+import FAQ from "../layouts/FAQ";
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -21,6 +22,8 @@ const Home = () => {
       <Donation />
       <Counter setShow={setShow} />
       {show && <Join setShow={setShow} />}
+      <Contact />
+      <FAQ />
     </div>
   );
 };

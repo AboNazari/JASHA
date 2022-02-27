@@ -37,11 +37,15 @@ const Mission = () => {
           Jasha - Live
         </h1>
         <p className="text-text text-base tracking-wide leading-7">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum
-          culpa ut quisquam vel molestiae, deleniti voluptatum eveniet amet quo
-          facere ea quia aperiam dolores.
+          “Jasha” is a social Media platform for public exchange of posts
+          (texts, photos, videos, music) aimed at publishing short (or not)
+          notes in the form of blogs and articles about conscious life. In
+          Jasha, all posts will focus on topics around conscious living:
+          eco-friendly life style, mental and physical health, self-care and
+          personal growth. Jasha is for everyone, regardless of race, age,
+          ethnicity, gender, sexual identity, creed, or any other affiliation.
         </p>
-        <Button />
+        <Button text="Readmore..." />
       </motion.div>
       <motion.div
         variants={rightSlide}

@@ -9,26 +9,26 @@ const Members = [
   {
     id: 1,
     image: Img,
-    name: "Abdullah N",
-    role: "Project Manager",
+    name: " Expert",
+    role: "IT Advisor",
   },
   {
     id: 2,
     image: Img,
-    name: "Abdullah N",
-    role: "Project Manager",
+    name: "Expert",
+    role: "Well Being Advisor",
   },
   {
     id: 3,
     image: Img,
-    name: "Abdullah N",
-    role: "Project Manager",
+    name: " Expert",
+    role: "Eco Advisor",
   },
   {
     id: 4,
     image: Img,
-    name: "Abdullah N",
-    role: "Project Manager",
+    name: " Expert",
+    role: "Development Advisor",
   },
 ];
 
@@ -95,9 +95,12 @@ const About = () => {
         className="grid grid-cols-1 lg:grid-cols-2 w-full"
       >
         <div className="lg:col-span-1 lg:px-10 xl:px-20 mb-10">
-          <h1 className="font-primary text-7xl lg:ml-10 xl:ml-20 ">Our team</h1>
+          <h1 className="font-primary text-7xl lg:ml-10 xl:ml-20 ">
+            Our Advisors
+          </h1>
           <p className="text-text text-xl lg:ml-20 xl:ml-36 mt-6">
-            We are diverse team of domain experts and problem solvers.
+            We have a diverse team of domain experts in the respective fields as
+            advisors!
           </p>
         </div>
         <motion.div {...movile_attributes} className="lg:col-span-1 flex w-fit">
