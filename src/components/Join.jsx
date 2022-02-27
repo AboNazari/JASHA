@@ -4,10 +4,10 @@ import { ReactComponent as Logo } from "../icons/logo_short.svg";
 const Join = ({ setShow }) => {
   return (
     <div className="fixed flex justify-center items-center flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4/5 bg-gray-200 h-[40vw] rounded-[4rem] px-10">
-      <h1>Join our cause</h1>
+      <h1 className="text-5xl">Join our cause</h1>
       <div
         onClick={() => setShow(false)}
-        className="absolute text-3xl text-black top-10 right-10 pointer"
+        className="absolute text-3xl text-black top-10 right-10 pointer hover:cursor-pointer"
       >
         X
       </div>
