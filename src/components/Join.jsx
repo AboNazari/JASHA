@@ -1,7 +1,5 @@
 import React from "react";
-import { ReactComponent as Logo } from "../icons/logo_short.svg";
-import Lottie from "lottie-react";
-import groovyWalkAnimation from "../data/animation.json";
+import PlaneAnim from "../animations/plane";
 
 const Join = ({ setShow }) => {
   return (
@@ -33,7 +31,7 @@ const Join = ({ setShow }) => {
           <div></div>
         </div>
         <div className="col-span-2 overflow-hidden">
-          <Lottie animationData={groovyWalkAnimation} />
+          <PlaneAnim />
         </div>
       </div>
       <div className="flex justify-center w-full">
