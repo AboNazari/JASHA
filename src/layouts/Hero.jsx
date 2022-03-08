@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 //icons
 import { ReactComponent as HeroSvg } from "../icons/hero.svg";
-
+import HeroAnimation from "../animations/HeroAnim";
 const Hero = () => {
   return (
     <div className="pt-[calc(50px+8.33333vw)] overflow-hidden h-auto flex flex-col lg:flex-row justify-between">
@@ -34,7 +34,7 @@ const Hero = () => {
         transition={{ duration: 0.8, type: "spring", bounce: 0.3 }}
         className="w-full lg:w-2/5"
       >
-        <HeroSvg width="100%" />
+        <HeroAnimation />
       </motion.div>
     </div>
   );
