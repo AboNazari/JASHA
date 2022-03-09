@@ -22,9 +22,10 @@ const Hero = () => {
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="text-5xl sm:text-8xl md:text-9xl lg:text-8xl"
+            className="md:text-9xl text-8xl"
           >
-            The world to be more...
+            The world to be more <span className="text-6xl">Pleasant for</span>{" "}
+            <br /> <span className="text-6xl"> Everyone !</span>
           </motion.h1>
         </div>
       </div>

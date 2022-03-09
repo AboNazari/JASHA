@@ -12,7 +12,7 @@ const TeamCard = ({ member }) => {
         style={{ backgroundImage: `url(${member.image})` }}
       />
       <div className="relative">
-        <h2 className="lg:text-4xl mt-5">{member.name}</h2>
+        <h2 className="lg:text-3xl mt-5">{member.name}</h2>
         <span className="absolute top-0 right-0">+ {member.role}</span>
       </div>
     </div>
