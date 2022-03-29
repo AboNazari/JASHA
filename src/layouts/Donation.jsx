@@ -21,9 +21,6 @@ const Donation = () => {
         </div>
         <div></div>
       </div>
-    
-    
-    
     </div>
   );
 };

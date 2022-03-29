@@ -10,6 +10,7 @@ import Counter from "../layouts/Counter";
 import Contact from "../layouts/Contact";
 import FAQ from "../layouts/FAQ";
 import Join from "../components/Join";
+import Advisors from "../layouts/Advisors";
 const Home = () => {
   const [show, setShow] = useState(false);
 
@@ -18,6 +19,7 @@ const Home = () => {
       <Hero />
       <Mission />
       <Benefits />
+      <Advisors />
       <About />
       <Donation />
       <Counter setShow={setShow} />
