@@ -12,6 +12,7 @@ import FAQ from "../layouts/FAQ";
 import Join from "../components/Join";
 import Advisors from "../layouts/Advisors";
 import Partners from "../layouts/Partners";
+import Footer from "../layouts/Footer";
 const Home = () => {
   const [show, setShow] = useState(false);
 
@@ -28,6 +29,7 @@ const Home = () => {
       {show && <Join setShow={setShow} />}
       <Contact />
       <FAQ />
+      <Footer />
     </div>
   );
 };
