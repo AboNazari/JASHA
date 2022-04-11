@@ -11,6 +11,7 @@ import Contact from "../layouts/Contact";
 import FAQ from "../layouts/FAQ";
 import Join from "../components/Join";
 import Advisors from "../layouts/Advisors";
+import Partners from "../layouts/Partners";
 const Home = () => {
   const [show, setShow] = useState(false);
 
@@ -21,6 +22,7 @@ const Home = () => {
       <Benefits />
       <Advisors />
       <About />
+      <Partners />
       <Donation />
       <Counter setShow={setShow} />
       {show && <Join setShow={setShow} />}
