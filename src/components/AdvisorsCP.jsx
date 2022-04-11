@@ -4,24 +4,36 @@ import { useState, useEffect } from "react";
 
 const AdvisorsCP = ({ AdvisorsData }) => {
   const [index, setIndex] = useState(0);
+  const [first, setFirst] = useState(true);
+  const [last, setLast] = useState(false);
 
   useEffect(() => {
     setIndex(0);
   }, []);
 
   const next = (e) => {
+    if (index === AdvisorsData.length - 2) {
+      setLast(true);
+    }
     if (index === AdvisorsData.length - 1) {
+      setLast(true);
       setIndex(AdvisorsData.length - 1);
     } else {
       setIndex(index + 1);
+      setFirst(false);
     }
   };
 
   const prev = () => {
+    if (index === 1) {
+      setFirst(true);
+    }
     if (index === 0) {
       setIndex(0);
+      setFirst(true);
     } else {
       setIndex(index - 1);
+      setLast(false);
     }
   };
 
@@ -51,10 +63,24 @@ const AdvisorsCP = ({ AdvisorsData }) => {
           {AdvisorsData[index].position}
         </p>
         <div className="flex gap-2  px-9">
-          <button className="p-3  bg-black rounded-full" onClick={prev}>
+          <button
+            className={
+              first
+                ? "p-3 bg-slate-400 rounded-full"
+                : "p-3  bg-black rounded-full"
+            }
+            onClick={prev}
+          >
             <Left />
           </button>
-          <button className="p-3 bg-black rounded-full" onClick={next}>
+          <button
+            className={
+              last
+                ? "p-3 bg-slate-400 rounded-full"
+                : "p-3  bg-black rounded-full"
+            }
+            onClick={next}
+          >
             <Right />
           </button>
           <span className="p-3  text-[1rem]">0{AdvisorsData[index].id}/04</span>
