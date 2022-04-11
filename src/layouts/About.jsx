@@ -81,8 +81,6 @@ const About = () => {
     };
   }, [screenSize]);
 
-  console.log(screenSize.dynamicWidth);
-
   const attributes =
     screenSize.dynamicWidth > 1023
       ? {
