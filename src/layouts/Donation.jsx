@@ -1,5 +1,4 @@
-import React from "react";
-import Img from "../images/team.svg";
+import Img from "../images/team.png";
 import DonationPayment from "./DonationPayment";
 
 const Donation = () => {
