@@ -12,6 +12,7 @@ module.exports = {
         bright: "#F0F6F1",
         text: "#605A5A",
         grayLight: "#F2F2F2",
+        grayX: "#8B8B8B",
       },
     },
   },

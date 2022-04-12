@@ -3,7 +3,7 @@ import DonationPayment from "./DonationPayment";
 
 const Donation = () => {
   return (
-    <div className="my-10 overflow-hidden">
+    <div className="my-10 overflow-hidden" id="Donation">
       <div
         style={{ backgroundImage: `url(${Img})` }}
         className="w-full h-[100vw] sm:h-[50vw] lg:h-[34vw] bg-cover bg-bottom text-white flex justify-end flex-col pl-6 pb-16 sm:pb-24 lg:pl-20 relative"

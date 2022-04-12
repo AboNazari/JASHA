@@ -6,7 +6,10 @@ import { ReactComponent as Instagram } from "../icons/Instagram.svg";
 
 const Contact = () => {
   return (
-    <div className="w-full h-full lg:h-screen overflow-hidden flex items-center justify-center ">
+    <div
+      id="Contact"
+      className="w-full h-full lg:h-screen overflow-hidden flex items-center justify-center "
+    >
       <div className="w-11/12 lg:w-10/12 rounded-xl flex  shadow-lg flex-col lg:flex-row mb-4">
         <div className="w-full lg:w-2/5 p-9 rounded-xl">
           <h3 className="lg:text-5xl text-3xl font-primary leading-relaxed lg:mx-8 mx-4">

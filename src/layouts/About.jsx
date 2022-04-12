@@ -118,7 +118,7 @@ const About = () => {
   }
 
   return (
-    <div className="py-36 my-10 px-10 h-full overflow-x-hidden">
+    <div id="About" className="py-36 my-10 px-10 h-full overflow-x-hidden">
       <motion.div
         {...attributes}
         className="grid grid-cols-1 lg:grid-cols-2 w-full"

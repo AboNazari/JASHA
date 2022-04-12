@@ -66,8 +66,8 @@ const AdvisorsCP = ({ AdvisorsData }) => {
           <button
             className={
               first
-                ? "p-3 bg-slate-400 rounded-full"
-                : "p-3  bg-black rounded-full"
+                ? "p-3 bg-slate-400 rounded-full "
+                : "p-3  bg-black rounded-full hover:-translate-x-2 transition-transform duration-300 ease-linear"
             }
             onClick={prev}
           >
@@ -77,13 +77,13 @@ const AdvisorsCP = ({ AdvisorsData }) => {
             className={
               last
                 ? "p-3 bg-slate-400 rounded-full"
-                : "p-3  bg-black rounded-full"
+                : "p-3  bg-black rounded-full hover:translate-x-2 transition-transform duration-300 ease-linear"
             }
             onClick={next}
           >
             <Right />
           </button>
-          <span className="p-3  text-[1rem]">0{AdvisorsData[index].id}/04</span>
+          <span className="p-3 text-[1rem]">0{AdvisorsData[index].id}/04</span>
         </div>
       </div>
     </div>

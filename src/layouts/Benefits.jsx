@@ -34,7 +34,10 @@ const cardList = [
 
 const Benefits = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-10 px-[10vw]">
+    <div
+      id="Benifits"
+      className="flex flex-col justify-center items-center mt-10 px-[10vw]"
+    >
       <h1 className="font-primary text-3xl mb-10">Our Benefits</h1>
       <div className="w-full lg:w-4/5 xl:w-3/5 grid sm:grid-cols-2 gap-5">
         {cardList.map((card) => (

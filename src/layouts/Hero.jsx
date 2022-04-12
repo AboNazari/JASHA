@@ -5,7 +5,10 @@ import { ReactComponent as HeroSvg } from "../icons/hero.svg";
 import HeroAnimation from "../animations/HeroAnim";
 const Hero = () => {
   return (
-    <div className="pt-[calc(50px+8.33333vw)] overflow-hidden h-auto flex flex-col lg:flex-row justify-between">
+    <div
+      id="Hero"
+      className="pt-[calc(50px+8.33333vw)] overflow-hidden h-auto flex flex-col lg:flex-row justify-between"
+    >
       <div className="w-full lg:w-3/5 px-10 mt-36 font-primary">
         <div className="overflow-hidden mb-4 lg:mb-10">
           <motion.h3
