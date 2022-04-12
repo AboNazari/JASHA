@@ -10,8 +10,8 @@ const Contact = () => {
       id="Contact"
       className="w-full h-full lg:h-screen overflow-hidden flex items-center justify-center "
     >
-      <div className="w-11/12 lg:w-10/12 rounded-xl flex  shadow-lg flex-col lg:flex-row mb-4">
-        <div className="w-full lg:w-2/5 p-9 rounded-xl">
+      <div className="w-11/12 lg:w-10/12  flex  shadow-lg flex-col lg:flex-row mb-4">
+        <div className="w-full lg:w-2/5 p-9 ">
           <h3 className="lg:text-5xl text-3xl font-primary leading-relaxed lg:mx-8 mx-4">
             We’d love to hear from you!
           </h3>
@@ -44,7 +44,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="w-full lg:w-3/5 bg-grayLight rounded-xl">
+        <div className="w-full lg:w-3/5 bg-grayLight ">
           <form className="md:m-10 md:p-12 p-8 font-primary">
             <input
               type="text"
