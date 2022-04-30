@@ -1,24 +1,61 @@
-import Img from "../images/team.png";
-import DonationPayment from "./DonationPayment";
+import React from "react";
+import DonationAmount from "../components/DonationAmount";
+import { ReactComponent as Leaf } from "../images/Leafs.svg";
+import { ReactComponent as Vector } from "../images/vector.svg";
+import AmountsDonate from "../data/AmountsDonate";
 
 const Donation = () => {
   return (
-    <div className="my-10 overflow-hidden" id="Donation">
-      <div
-        style={{ backgroundImage: `url(${Img})` }}
-        className="w-full h-[100vw] sm:h-[50vw] lg:h-[34vw] bg-cover bg-bottom text-white flex justify-end flex-col pl-6 pb-16 sm:pb-24 lg:pl-20 relative"
-      >
-        <h1 className="font-primary text-5xl">Donation Now</h1>
-        <p className="mt-3 text-xl">
-          Make a positive impact on this world to be a better place for everyone
-        </p>
-        <div className="absolute w-0 h-0 border-b-[200px] border-b-white border-l-[100rem] border-l-transparent left-0 bottom-0 transfor" />
-      </div>
-      <div className="flex w-full h-full relative px-5 lg:px-20 py-10">
-        <div className="flex justify-center w-full">
-          <DonationPayment />
+    <div className="w-full h-full flex flex-col ">
+      <div className="flex items-center w-[70%] m-auto justify-end bg-gradient-to-l from-primary to-black rounded-2xl z-10">
+        <div className="w-3/5  pr-20 ">
+          <h3 className="text-white font-primary text-3xl  mb-5">DONATE NOW</h3>
+          <p className="text-white text-lg font-primary">
+            A big thank you to the kindest and most generous sponsors! Let’s
+            make a positive impact together on this world to be a better place
+            for everyone!
+          </p>
         </div>
-        <div></div>
+        <Leaf />
+      </div>
+      {/* Second Section */}
+      <div className="-mt-32 mx-auto ">
+        <Vector />
+      </div>
+      {/* section three */}
+      <div className="flex items-center w-[70%] m-auto h-2/4  justify-end bg-gradient-to-r from-bright to-gray rounded-2xl p-16 -mt-32 border-2 z-10">
+        <div className="w-2/4">
+          <h3 className=" font-primary text-3xl  mb-5">
+            CHOOSE PAYMENT METHOD
+          </h3>
+          <p className=" text-lg font-primary">
+            Remember, “giving is not just about making a donation It’s about
+            making the difference.”
+          </p>
+          <p className="text-right text-lg"> - Kathy Calvin</p>
+        </div>
+        <div className="w-2/4">
+          <div className="grid grid-cols-2 gap-y-5 gap-x-2 justify-items-center w-3/4 m-auto">
+            {AmountsDonate.map((data) => {
+              return (
+                <DonationAmount
+                  key={data.id}
+                  name={data.name}
+                  id={data.id}
+                  amount={data.amount}
+                />
+              );
+            })}
+            <input
+              type="text "
+              className="border-2 border-black rounded-lg px-4 text-xl max-w-[13rem] bg-white"
+              placeholder="Enter an amount..."
+            />
+          </div>
+          <button className="border-2 border-black rounded-lg px-5 py-3 mt-4 text-xl max-w-[13rem] bg-primary text-white ml-[65%] hover:bg-white hover:text-black">
+            Press to Proceed
+          </button>
+        </div>
       </div>
     </div>
   );

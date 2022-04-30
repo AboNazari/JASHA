@@ -15,7 +15,7 @@ const DonationAmount = ({ amount, id }) => {
     <div className="flex justify-center align-middle">
       <input
         type="checkbox"
-        className="w-[16rem] h-[4rem] absolute m-auto checked:bg-primary"
+        className="w-[16rem] h-[4rem] absolute m-auto"
         name={id}
         id={id}
         value={amount}
@@ -24,14 +24,14 @@ const DonationAmount = ({ amount, id }) => {
       {checked ? (
         <label
           htmlFor={id}
-          className="text-[2.5rem] border-2 border-black z-10 text-white bg-primary rounded-lg py-4 px-16 "
+          className="text-[2.5rem] border-2 border-black z-10 text-white bg-primary rounded-lg py-4 px-16"
         >
           {"$" + amount}
         </label>
       ) : (
         <label
           htmlFor="five"
-          className="text-[2.5rem] border-2 border-black z-10 rounded-lg py-4 px-16 bg-white "
+          className="text-[2.5rem] border-2 border-black z-10 rounded-lg py-4 px-16 bg-white"
         >
           {"$" + amount}
         </label>

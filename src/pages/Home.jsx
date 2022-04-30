@@ -14,8 +14,6 @@ import Partners from "../layouts/Partners";
 import Footer from "../layouts/Footer";
 import Donation from "../layouts/Donation";
 
-import DonationX from "../layouts/DonationX";
-
 const Home = () => {
   const [show, setShow] = useState(false);
 
@@ -28,7 +26,6 @@ const Home = () => {
       <About />
       <Partners />
       <Donation />
-      <DonationX />
       <Counter setShow={setShow} />
       {show && <Join setShow={setShow} />}
       <FAQ />
