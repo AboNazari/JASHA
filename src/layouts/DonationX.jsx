@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import DonationAmount from "../components/DonationAmount";
 import { ReactComponent as Leaf } from "../images/Leafs.svg";
 import { ReactComponent as Vector } from "../images/vector.svg";
