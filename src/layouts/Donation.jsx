@@ -3,8 +3,32 @@ import DonationAmount from "../components/DonationAmount";
 import { ReactComponent as Leaf } from "../images/Leafs.svg";
 import { ReactComponent as Vector } from "../images/vector.svg";
 import AmountsDonate from "../data/AmountsDonate";
+import StripeCheckout from "react-stripe-checkout";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Donation = () => {
+  const [product] = React.useState({
+    name: "Tesla Roadster",
+    price: 64998.67,
+    description: "Cool car",
+  });
+
+  // Handle Token Function
+  async function handleToken(token, addresses) {
+    const response = await axios.post(
+      "https://ry7v05l6on.sse.codesandbox.io/checkout",
+      { token, product }
+    );
+    const { status } = response.data;
+    console.log("Response:", response.data);
+    if (status === "success") {
+      toast("Success! Check email for details", { type: "success" });
+    } else {
+      toast("Something went wrong", { type: "error" });
+    }
+  }
   return (
     <div className="w-full h-full flex flex-col ">
       <div className="flex items-center w-[70%] m-auto justify-end bg-gradient-to-l from-primary to-black rounded-2xl z-10">
@@ -55,6 +79,14 @@ const Donation = () => {
           <button className="border-2 border-black rounded-lg px-5 py-3 mt-4 text-xl max-w-[13rem] bg-primary text-white ml-[65%] hover:bg-white hover:text-black">
             Press to Proceed
           </button>
+          <StripeCheckout
+            stripeKey="pk_test_4TbuO6qAW2XPuce1Q6ywrGP200NrDZ2233"
+            token={handleToken}
+            amount={product.price * 100}
+            name="product"
+            billingAddress
+            shippingAddress
+          />
         </div>
       </div>
     </div>
