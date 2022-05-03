@@ -28,8 +28,8 @@ const Home = () => {
       <Donation />
       <Counter setShow={setShow} />
       {show && <Join setShow={setShow} />}
-      <FAQ />
       <Contact />
+      <FAQ />
       <Footer />
     </div>
   );
