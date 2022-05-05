@@ -7,6 +7,7 @@ import { ReactComponent as Envelope } from "../icons/Envelope.svg";
 import { ReactComponent as Hat } from "../icons/hat.svg";
 import { ReactComponent as Book } from "../icons/Book.svg";
 import { Link } from "react-router-dom";
+import Toggle from "./Toggle";
 
 const Navbar = () => {
   return (
@@ -46,6 +47,7 @@ const Navbar = () => {
               <p className="pt-3 tracking-wider">About</p>
             </Link>
           </li>
+          <Toggle />
         </ul>
       </nav>
     </div>
