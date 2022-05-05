@@ -1,7 +1,11 @@
 import React from "react";
-
 //icons
 import { ReactComponent as Logo } from "../icons/logo.svg";
+import { ReactComponent as Ligthening } from "../icons/Lightening.svg";
+import { ReactComponent as Home } from "../icons/Home.svg";
+import { ReactComponent as Envelope } from "../icons/Envelope.svg";
+import { ReactComponent as Hat } from "../icons/hat.svg";
+import { ReactComponent as Book } from "../icons/Book.svg";
 
 const Navbar = () => {
   return (
@@ -9,18 +13,40 @@ const Navbar = () => {
       <div>
         <Logo width="130px" />
       </div>
-      <div className="flex items-center ">
-        <div className="mr-8 font-primary">
-          <button className="mr-4">EN</button>
-          <button>RU</button>
-        </div>
-        <div>
-          <button className="relative w-9 h-5">
-            <span className="absolute left-0 top-1 w-full h-0.5 bg-black"></span>
-            <span className="absolute left-0 top-3 w-full h-0.5 bg-black"></span>
-          </button>
-        </div>
-      </div>
+      <nav>
+        <ul className="flex">
+          <li>
+            <a href="#">
+              <Home />
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Hat />
+              Quote Of the Day
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Ligthening />
+              Warrior Of the Week
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Envelope />
+              Contact Us
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <Book />
+              About
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 };
