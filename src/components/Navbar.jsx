@@ -30,10 +30,10 @@ const Navbar = () => {
             </a>
           </li>
           <li className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500">
-            <a href="#">
+            <Link to="/warrior">
               <Lightning className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] " />
               <p className="pt-3 tracking-wider">Warrior Of the Week</p>
-            </a>
+            </Link>
           </li>
           <li className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500">
             <Link to="contact">

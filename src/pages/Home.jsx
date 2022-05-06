@@ -14,6 +14,7 @@ import Partners from "../layouts/Partners";
 import Footer from "../layouts/Footer";
 import Donation from "../layouts/Donation";
 import Navbar from "../components/Navbar";
+import Warrior from "../layouts/Warrior";
 
 const Home = () => {
   const [show, setShow] = useState(false);
@@ -26,6 +27,7 @@ const Home = () => {
       <Benefits />
       <Advisors />
       <OurTeam />
+      <Warrior />
       <Partners />
       <Donation />
       <Counter setShow={setShow} />
