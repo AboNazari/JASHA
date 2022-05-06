@@ -1,21 +1,51 @@
 import React from "react";
-
+import { ReactComponent as People } from "../images/peopleW.svg";
 const Counter = ({ setShow }) => {
   return (
     <div
       id="Counter"
-      className="flex justify-center items-center w-full h-screen flex-col"
+      className="flex justify-center items-center w-full h-screen flex-col bg-[#F0F6F1] mt-10"
     >
-      <div className="flex items-end font-primary mb-24">
-        <h1 className="text-9xl">19210</h1>
-        <span className="text-3xl ml-5">people have joined us</span>
+      <div className="flex gap-8 ">
+        <div className="flex font-primary mb-24 flex-col ">
+          <span className="text-3xl text-primary shadow-xl bg-white pl-10 h-[3rem] w-[30rem] rounded-tl-3xl">
+            people who already joined us...
+          </span>
+          <h3 className="text-[15rem] border-[1rem] border-primary rounded-b-3xl rounded-tr-3xl text-center px-10 bg-white text-primary">
+            <span className="border-r pr-2">0</span>
+            <span className="border-r px-2">2</span>
+            <span className="border-r px-2">3</span>
+            <span className="border-r px-2">4</span>
+            <span className="pl-2">2</span>
+          </h3>
+        </div>
+        <div className="flex flex-col justify-center bg-primary rounded-3xl h-[70%] m-auto px-20 mb-24 shadow-2xl shadow-solid">
+          <p className="text-4xl text-center pt-8 text-white tracking-wider font-primary font-semibold leading-loose">
+            Become part of the <br /> movement!
+          </p>
+          <button
+            onClick={() => setShow(true)}
+            className="px-16 py-5 m-auto font-primary rounded-full bg-white text-black text-4xl"
+          >
+            JOIN US
+          </button>
+        </div>
       </div>
-      <button
-        onClick={() => setShow(true)}
-        className="px-36 py-5 text-white font-primary rounded-full bg-primary text-4xl"
-      >
-        Join us cause
-      </button>
+      {/* bottom section */}
+      <div className="bg-white px-20 py-10 rounded-2xl shadow-2xl flex w-[68%] justify-between">
+        <People className="w-1/3" />
+        <div className="w-2/3">
+          <h3 className="text-4xl text-primary pb-6 font-primary ">
+            What's our movement?
+          </h3>
+          <p className="text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            recusandae cumque distinctio similique veniam illum nemo ipsam, quae
+            illo nihil modi minus ut possimus fuga, atque sit voluptatem
+            exercitationem ipsa.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
