@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 const Hero = () => {
   return (
     <div
-      id="Hero"
+      id="home"
       className="pt-[calc(50px+8.33333vw)] overflow-hidden h-auto flex flex-col lg:flex-row justify-between lg:px-32 mb-32"
     >
       <div className="w-full lg:w-3/5 px-10 mt-36 font-primary py-16 md:py-0 ">
@@ -27,8 +27,8 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
             className="md:text-9xl text-3xl lg:8xl"
           >
-            The world to be more <br />
-            <span className="text-4xl md:text-6xl">Pleasant for</span>{" "}
+            The world to be <br />
+            <span className="text-4xl md:text-6xl">Better for</span>{" "}
             <span className="text-6xl"> Everyone !</span>
           </motion.h1>
         </div>

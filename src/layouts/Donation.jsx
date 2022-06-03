@@ -30,7 +30,7 @@ const Donation = () => {
     }
   }
   return (
-    <div className="w-full h-full flex flex-col ">
+    <div className="w-full h-full flex flex-col " id="donation">
       <div className="flex items-center w-[70%] m-auto justify-end bg-gradient-to-l from-primary to-black rounded-2xl z-10">
         <div className="w-3/5  pr-20 ">
           <h3 className="text-white font-primary text-3xl  mb-5">DONATE NOW</h3>

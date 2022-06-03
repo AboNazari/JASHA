@@ -18,34 +18,34 @@ const Navbar = () => {
       <nav className="ml-[10%]">
         <ul className="flex gap-40 font-primary justify-start text-[#87D4AA]">
           <li className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500">
-            <a href="/">
+            <a href="#home">
               <Home className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] " />
               Home
             </a>
           </li>
           <li className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500">
-            <a href="#">
+            <a href="#quote">
               <Hat className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] " />
               <p className="pt-3 tracking-wider">Quote Of the Day</p>
             </a>
           </li>
           <li className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500">
-            <Link to="/warrior">
+            <a href="#warrior">
               <Lightning className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] " />
               <p className="pt-3 tracking-wider">Warrior Of the Week</p>
-            </Link>
+            </a>
           </li>
           <li className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500">
-            <Link to="contact">
+            <a href="#contact">
               <Envelope className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] " />
               <p className="pt-3 tracking-wider"> Contact Us</p>
-            </Link>
+            </a>
           </li>
           <li className="text-center text-xl hover:text-[#304F45] duration-500">
-            <Link to="/about">
+            <a href="#about">
               <Book className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] " />
               <p className="pt-3 tracking-wider">About</p>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

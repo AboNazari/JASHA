@@ -18,12 +18,7 @@ const Members = [
     name: "Abdullah ",
     role: "Project Manager",
   },
-  {
-    id: 2,
-    image: img,
-    name: "Baistan ",
-    role: "Tech Lead",
-  },
+
   {
     id: 3,
     image: parker,
@@ -118,7 +113,7 @@ const OurTeam = () => {
   }
 
   return (
-    <div id="About" className="py-36 my-10 px-10 h-full overflow-x-hidden">
+    <div id="about" className="py-36 my-10 px-10 h-full overflow-x-hidden">
       <motion.div
         {...attributes}
         className="grid grid-cols-1 lg:grid-cols-2 w-full"

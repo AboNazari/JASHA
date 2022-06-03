@@ -3,7 +3,7 @@ import { ReactComponent as Hat } from "../icons/hat.svg";
 
 const Quote = () => {
   return (
-    <div className="w-full text-black lg:mb-[10rem]">
+    <div className="w-full text-black lg:mb-[10rem]" id="quote">
       <div className="lg:w-3/4 px-4 mt-10 m-auto text-dark mb-20 ">
         <div className="flex flex-col w-[10rem]">
           <Hat className="m-auto fill-primary" />

@@ -3,11 +3,41 @@ import Button from "../components/Button";
 import { ReactComponent as Email } from "../icons/email.svg";
 import { ReactComponent as FaceBook } from "../icons/Facebook.svg";
 import { ReactComponent as Instagram } from "../icons/Instagram.svg";
+import { useState } from "react";
+import { send } from "emailjs-com";
 
 const Contact = () => {
+  const [toSend, setToSend] = useState({
+    name: "",
+    surname: "",
+    email: "",
+    message: "",
+  });
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send("service_hawx44n", "template_ttgta2q", toSend, "Vp2nB-WOSzwvwq9du")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+    cleanUp();
+  };
+  const cleanUp = () => {
+    setToSend({
+      name: "",
+      surname: "",
+      email: "",
+      message: "",
+    });
+  };
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
   return (
     <div
-      id="Contact"
+      id="contact"
       className="w-full h-full lg:h-screen overflow-hidden flex items-center justify-center "
     >
       <div className="w-11/12 lg:w-10/12  flex  shadow-lg flex-col lg:flex-row mb-4">
@@ -17,25 +47,17 @@ const Contact = () => {
           </h3>
           <ul className="lg:my-28 mt-10 lg:mx-10 md:text-2xl text-xl leading-relaxed font-primary">
             <li>
-              <a href="#" className="flex items-center">
+              <a href="mailto:public@jahsa.life" className="flex items-center">
                 <Email className="mr-4 mt-2" /> public@jahsa.life
               </a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/jasha.live/"
+                href="https://www.instagram.com/jasha.life/"
                 className="flex items-center  mt-4"
                 target="_blank"
               >
                 <Instagram className="mr-4 mt-2" /> jasha.life
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/jasha.live/"
-                className="flex items-center mt-4"
-              >
-                <FaceBook className="mr-4 mt-2" /> jasha.life
               </a>
             </li>
           </ul>
@@ -45,16 +67,34 @@ const Contact = () => {
         </div>
 
         <div className="w-full lg:w-3/5 bg-grayLight ">
-          <form className="md:m-10 md:p-12 p-8 font-primary">
+          <form
+            onSubmit={onSubmit}
+            action="#"
+            className="md:m-10 md:p-12 p-8 font-primary"
+          >
             <input
               type="text"
+              name="name"
               placeholder="First Name"
               className="w-full p-4 rounded-xl shadow-md my-4 "
+              value={toSend.name}
+              onChange={handleChange}
+            />
+            <input
+              type="text"
+              name="surname"
+              placeholder="last Name"
+              className="w-full p-4 rounded-xl shadow-md my-4 "
+              value={toSend.surname}
+              onChange={handleChange}
             />
             <input
               type="text"
               placeholder="Email"
+              name="email"
               className="w-full p-4 rounded-xl shadow-md my-4 "
+              value={toSend.email}
+              onChange={handleChange}
             />
             <textarea
               name="message"
@@ -63,8 +103,23 @@ const Contact = () => {
               rows="10"
               className="w-full p-4 rounded-xl shadow-md my-4"
               placeholder="Your Message"
+              value={toSend.message}
+              onChange={handleChange}
             ></textarea>
-            <Button text="Send Message" />
+            <div className="flex items-center content-center gap-5 mt-5">
+              <button
+                className=" py-2 bg-primary border-2 border-primary w-[8rem] rounded-lg text-white place-self-end hover:bg-white hover:text-dark"
+                onClick={cleanUp}
+              >
+                Cancel
+              </button>
+              <button
+                className=" py-2 bg-primary border-2 border-primary w-[8rem] rounded-lg text-white place-self-end hover:bg-white hover:text-dark"
+                type="submit"
+              >
+                Send
+              </button>
+            </div>
           </form>
         </div>
       </div>

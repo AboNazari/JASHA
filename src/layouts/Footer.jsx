@@ -21,14 +21,14 @@ const Footer = () => {
         <div className="w-2/4 lg:flex  flex-col justify-center text-center  hidden ">
           <h3 className=" text-grayX text-2xl mb-4">USEFUL LINKS</h3>
           <p className="flex justify-evenly my-1 text-lg font-primary ">
-            <a href="#Benifits">Benifits</a> <a href="#FAQ">FAQ</a>
-            <a href="#Contact">Contact Us</a>
+            <a href="#Benifits">Benifits</a> <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Us</a>
           </p>
           <p className="flex justify-evenly my-1 text-lg font-primary ">
-            <a href="#Counter">Join Us</a> <a href="#About">About Us</a>
+            <a href="#Counter">Join Us</a> <a href="#about">About Us</a>
           </p>
           <p className="flex justify-evenly my-1 text-lg font-primary ">
-            <a href="#Donation">Donation</a>
+            <a href="#donation">Donation</a>
           </p>
           <div className="flex  justify-center gap-3 mt-2">
             <MasterCard />
@@ -45,7 +45,7 @@ const Footer = () => {
           </h4>
           <p className=" text-lg font-primary text-left flex">
             <Email />
-            <a href="#" className="ml-1">
+            <a href="mailto:public@jasha.life" className="ml-1">
               public@jasha.life
             </a>
           </p>
@@ -53,18 +53,8 @@ const Footer = () => {
             FOLLOW US
           </h4>
           <div className="flex gap-2 mt-2">
-            <a href="#">
-              <Facebook />
-            </a>
-            <a href="#">
+            <a href="https://www.instagram.com/jasha.life/" target="_blank">
               <Instagram />
-            </a>
-
-            <a href="#">
-              <Telegram />
-            </a>
-            <a href="#">
-              <WhatsApp />
             </a>
           </div>
         </div>

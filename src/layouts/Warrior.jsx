@@ -4,7 +4,7 @@ import person from "../images/Char1.jpg";
 
 const Warrior = () => {
   return (
-    <div className="w-full text-black lg:mb-[10rem]">
+    <div className="w-full text-black lg:mb-[10rem]" id="warrior">
       <div className="w-[85%] m-auto text-dark md:mb-20 mb-10">
         <div className="flex flex-col w-[10rem]">
           <Lightning className="m-auto" />

@@ -39,10 +39,16 @@ const Counter = ({ setShow }) => {
             What's our movement?
           </h3>
           <p className="text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            recusandae cumque distinctio similique veniam illum nemo ipsam, quae
-            illo nihil modi minus ut possimus fuga, atque sit voluptatem
-            exercitationem ipsa.
+            Jasha is intended to be a community-based social media platform
+            which encourages social change through a userbase that publishes
+            posts about conscious living. The reason that we opted for this term
+            was that the word "Jasha” is taken from Kyrgyz origin which means
+            easygoing, highly sociable and having deep affection for life. As
+            environmental activists are concerned about the negative impacts of
+            human action have caused grievous influence on the planet and its
+            inhabitants therefore Jasha’s friendly nature helps make lots of
+            eco-friendly friends in life and argues for implementations of
+            sustainable territories. 
           </p>
         </div>
       </div>
