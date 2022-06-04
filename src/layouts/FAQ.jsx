@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import Question from "../components/Question";
 import QuestionsData from "../data/QuestionsData";
 

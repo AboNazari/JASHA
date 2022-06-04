@@ -16,30 +16,26 @@ const About = () => {
         <div className="lg:w-1/2 w-[100%] md:p-4 mt-2  m-auto  md:-my-10 ">
           <Hello />
         </div>
-        <p className="lg:w-1/2 p-4 text-lg font-[Roboto] lg:pt-16 leading-10">
+        <div className="lg:w-1/2 p-4 text-lg font-[Roboto] lg:pt-16 leading-10">
           “Jasha” is a social media platform for public exchange of posts
           (texts, photos, videos, music) aimed at publishing notes in the form
           of blogs and articles about conscious living. In Jasha, all posts
           focus on topics around conscious living: eco-friendly life style,
           mental and physical wellbeing, and personal growth.
           <br />
-          The social media platform Jasha is designed for Central Asian youth to
-          create social change and support their development as a community and
-          as individuals. The platform should be publicly available to any
-          mobile internet user to create and publish posts on topics such as
-          conscious living, eco-friendly lifestyles, mental and physical
-          wellbeing, and personal growth. Languages of the platform: English,
-          Russian, and Kyrgyz. 
+          <p className="lg:block hidden">
+            The social media platform Jasha is designed for Central Asian youth
+            to create social change and support their development as a community
+            and as individuals. The platform should be publicly available to any
+            mobile internet user to create and publish posts on topics such as
+            conscious living, eco-friendly lifestyles, mental and physical
+            wellbeing, and personal growth. Languages of the platform: English,
+            Russian, and Kyrgyz. 
+          </p>
           <br />
           Jasha welcomes everyone, regardless of race, age, ethnicity, religion,
           gender, sexual identity, or any other affiliation.
-        </p>
-        <Link
-          to="/about"
-          className="px-4 w-2/5 ml-3 text-white font-bold text-lg py-2 bg-primary mt-6 rounded-xl md:hidden"
-        >
-          ReadMore...
-        </Link>
+        </div>
       </div>
     </div>
   );
