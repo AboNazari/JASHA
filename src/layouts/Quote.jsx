@@ -17,9 +17,6 @@ const Quote = () => {
           “You will never know what results <br /> come of your actions, but if
           you do nothing, <br /> there will be no results.”
         </p>
-        <p className=" text-right font-bold lg:text-lg text-black">
-          6th May, 2022
-        </p>
       </div>
     </div>
   );

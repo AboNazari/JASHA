@@ -49,7 +49,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <button className="">{/* <FiMenu size="70" /> */}</button>
     </div>
   );
 };

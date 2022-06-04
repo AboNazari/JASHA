@@ -15,7 +15,7 @@ const Contact = () => {
   });
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_hawx44n", "template_ttgta2q", toSend, "Vp2nB-WOSzwvwq9du")
+    send("service_hawx44n", "template_dyu1o6v", toSend, "Vp2nB-WOSzwvwq9du")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
       })
@@ -74,9 +74,9 @@ const Contact = () => {
           >
             <input
               type="text"
-              name="name"
               placeholder="First Name"
               className="w-full p-4 rounded-xl shadow-md my-4 "
+              name="name"
               value={toSend.name}
               onChange={handleChange}
             />

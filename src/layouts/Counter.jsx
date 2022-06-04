@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as People } from "../images/peopleW.svg";
-const Counter = ({ setShow }) => {
+const Counter = ({ setShow, number }) => {
   return (
     <div
       id="Counter"
@@ -12,11 +12,7 @@ const Counter = ({ setShow }) => {
             people who already joined us...
           </span>
           <h3 className="text-[15rem] border-[1rem] border-primary rounded-b-3xl rounded-tr-3xl text-center px-10 bg-white text-primary">
-            <span className="border-r pr-2">0</span>
-            <span className="border-r px-2">2</span>
-            <span className="border-r px-2">3</span>
-            <span className="border-r px-2">4</span>
-            <span className="pl-2">2</span>
+            {number}
           </h3>
         </div>
         <div className="flex flex-col justify-center bg-primary rounded-3xl h-[70%] m-auto px-20 mb-24 shadow-2xl shadow-solid">

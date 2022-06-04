@@ -19,7 +19,11 @@ import Quote from "../layouts/Quote";
 
 const Home = () => {
   const [show, setShow] = useState(false);
+  const [number, setNumber] = useState(0);
 
+  const onNumber = (e) => {
+    setNumber(e);
+  };
   return (
     <div>
       <Navbar />
@@ -31,9 +35,8 @@ const Home = () => {
       <Warrior />
       <Quote />
       <Partners />
-      <Donation />
-      <Counter setShow={setShow} />
-      {show && <Join setShow={setShow} />}
+      <Counter setShow={setShow} number={number} />
+      {show && <Join setShow={setShow} giveNumber={onNumber} />}
       <Contact />
       <FAQ />
       <Footer />

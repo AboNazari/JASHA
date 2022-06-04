@@ -11,14 +11,13 @@ const Warrior = () => {
           <div className=" bg-gradient-to-r from-primary to-dark w-[11rem] h-[6px] mt-4"></div>
         </div>
         <h3 className="md:text-5xl text-3xl tracking-wider pt-7">
-          WARRIOR OF A WEEK
+          WARRIOR OF THE WEEK
         </h3>
       </div>
       <div className="flex gap-8 lg:w-3/4 w-[85%] m-auto flex-col lg:flex-row">
         <div className="lg:w-1/3 flex flex-col mx-h-[50vh] rounded-xl">
           <img
             src={person}
-            alt=""
             className="lg:max-h-[47vh] max-h-[40vh] object-cover lg:rounded-tl-3xl  rounded-t-2xl lg:rounded-tr-none"
           />
           <p className="w-full py-3 bg-gradient-to-r from-primary to-dark text-white text-2xl text-center rounded-b-3xl">

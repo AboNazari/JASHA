@@ -27,9 +27,7 @@ const Footer = () => {
           <p className="flex justify-evenly my-1 text-lg font-primary ">
             <a href="#Counter">Join Us</a> <a href="#about">About Us</a>
           </p>
-          <p className="flex justify-evenly my-1 text-lg font-primary ">
-            <a href="#donation">Donation</a>
-          </p>
+
           <div className="flex  justify-center gap-3 mt-2">
             <MasterCard />
             <Visa />

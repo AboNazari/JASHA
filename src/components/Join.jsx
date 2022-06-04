@@ -1,7 +1,41 @@
 import React from "react";
 import PlaneAnim from "../animations/plane";
+import { useState } from "react";
+import { send } from "emailjs-com";
 
-const Join = ({ setShow }) => {
+const Join = ({ setShow, giveNumber }) => {
+  const [number, setNumber] = useState(0);
+  const [toSend, setToSend] = useState({
+    name: "",
+    country: "",
+    email: "",
+  });
+  const onSubmit = (e) => {
+    e.preventDefault();
+    send("service_hawx44n", "template_mrqh2db", toSend, "Vp2nB-WOSzwvwq9du")
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
+    cleanUp();
+    setNumber(number + 1);
+    NumberPass();
+  };
+  const cleanUp = () => {
+    setToSend({
+      name: "",
+      country: "",
+      email: "",
+    });
+  };
+  const handleChange = (e) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+  const NumberPass = () => {
+    giveNumber(number);
+  };
   return (
     <div className="fixed flex justify-center items-center flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2/5 bg-white shadow-xl h-[22vw] rounded-[2rem] px-10 z-50">
       <h1 className="text-5xl">Join our cause</h1>
@@ -12,32 +46,55 @@ const Join = ({ setShow }) => {
         X
       </div>
       <div className="grid grid-cols-5 gap-4 w-full">
-        <div className="col-span-3 grid grid-cols-2 gap-5 items-center content-center">
+        <form
+          onSubmit={onSubmit}
+          action="#"
+          className="col-span-3 grid grid-cols-2 gap-5 items-center content-center"
+        >
           <input
             className="col-span-1 px-7 py-6 rounded-lg border-4"
             type="text"
             placeholder="Name"
+            name="name"
+            id="name"
+            value={toSend.name}
+            onChange={handleChange}
           />
           <input
             className="col-span-1 px-7 py-6 rounded-lg border-4"
             type="text"
             placeholder="Country"
+            name="country"
+            id="country"
+            value={toSend.country}
+            onChange={handleChange}
           />
           <input
             className="col-span-2 px-7 py-6 rounded-lg border-4"
             type="text"
             placeholder="E-mail"
+            name="email"
+            id="email"
+            value={toSend.email}
+            onChange={handleChange}
           />
-          <div></div>
-        </div>
+
+          <button
+            type="submit"
+            className="px-14 py-4 bg-primary text-white text-xl rounded-lg"
+          >
+            Join Now
+          </button>
+          <button
+            className=" px-14 py-4 bg-primary text-white text-xl rounded-lg"
+            onClick={cleanUp}
+          >
+            Cancel
+          </button>
+        </form>
         <div className="col-span-2 overflow-hidden">
           <PlaneAnim />
         </div>
-      </div>
-      <div className="flex justify-center w-full">
-        <button className="px-14 py-4 bg-primary text-white text-2xl rounded-lg">
-          Join Now
-        </button>
       </div>
     </div>
   );
