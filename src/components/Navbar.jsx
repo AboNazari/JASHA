@@ -16,11 +16,11 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center w-full h-auto fixed top-0 left-0 px-[5vw] shadow-md bg-white md:pt-10 pt-5 z-50 md:pb-5 flex-col lg:flex-row">
-      <div className="flex flex-row justify-between w-full px-5">
+      <div className="flex flex-row justify-between   w-full px-5">
         <Logo className="w-[150px] md:w-[200px] lg:border-r-4 md:pr-10 pr-5 border-primary" />
         {open ? (
           <button
-            className="p-6  text-white text-2xl lg:hidden"
+            className="p-6 text-white text-2xl lg:hidden"
             onClick={toggle}
           >
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB+klEQVRoge2ZTU7DMBBGXzkAKVwCtnTBhquQ81CJLpoW8XMUNrCklUDiGtyCRT2qY5zEie3URf6kSE2cePw644k9gaysrKysrPE0AUqgiGijAG6VrSiaABXwA2yJA1MAG2WjogfMieN9E2AJ3ACXwDvwBpz3Gma7CuAV+AYugGvgiYCeEU98Amfa9TnwRRgY8cQz+4EXwIdxzUslO1dP1flM/RYv+YaZQEgoTYEr1TZVtkuP/v8YWmuGZqpNYDYMgzEhoP5HVR59txpcaQYX1D3T16DNE/eqLQqEaVhgfDxjg3ggoieaBuDjmYNDiE7ZZZMXZbgAHtllL4FpymZmdjKftWXHqBoCkxyEPjBXmGQhRK7xnsSc6FIXzFwdSUOIzOWEHjr6PUmFU5PaYI4GQiRhNlfnEkoSTqi24OHkuowPqWgbplBqS7G20Aq1BQiqNgj9nqRhutLvnTpsbSsSSb9dELKI3KjfScJ0LTuW7FNsW2o+aJj1gdCfcYEZ7d0yBEJ/tgtmlBel65xw2Vjpc2ah2kaZMyEgzL4EBupFh2gwtmpHqOJDk2fWA/p0MmirO/kuxbs8ExSmrUBXEaZAt6XuGanOBC3Q2fbgoXN/U8nUvOYtc+AxXmD6wKdEgBBJNon9WWHLgM8KfTXWh56SI9i3ZGVlZWX9H/0ChDO7JqoWg7QAAAAASUVORK5CYII=" />
@@ -34,8 +34,8 @@ const Navbar = () => {
           </button>
         )}
       </div>
-      <nav className={open ? "md:ml-[10%]  lg:block" : "hidden"}>
-        <ul className="flex lg:gap-40 font-primary justify-start text-[#87D4AA] flex-col lg:flex-row">
+      <nav className={open ? "md:ml-[10%]  lg:block" : "hidden lg:block"}>
+        <ul className="flex lg:gap-40 font-primary  text-[#87D4AA] flex-col lg:flex-row">
           <li
             className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5 lg:my-0 "
             onClick={toggle}

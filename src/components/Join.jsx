@@ -37,22 +37,22 @@ const Join = ({ setShow, giveNumber }) => {
     giveNumber(number);
   };
   return (
-    <div className="fixed flex justify-center items-center flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2/5 bg-white shadow-xl h-[22vw] rounded-[2rem] px-10 z-50">
-      <h1 className="text-5xl">Join our cause</h1>
+    <div className="fixed flex justify-center items-center flex-col top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 lg:w-2/5 bg-white shadow-xl lg:h-[22vw] rounded-[2rem] lg:px-10 z-50 py-6 px-20">
+      <h1 className="lg:text-5xl text-2xl py-5">Join our cause</h1>
       <div
         onClick={() => setShow(false)}
         className="absolute text-3xl text-black top-10 right-10 pointer hover:cursor-pointer"
       >
         X
       </div>
-      <div className="grid grid-cols-5 gap-4 w-full">
+      <div className="lg:grid flex flex-row grid-cols-5 gap-4 w-full">
         <form
           onSubmit={onSubmit}
           action="#"
-          className="col-span-3 grid grid-cols-2 gap-5 items-center content-center"
+          className="col-span-3 lg:grid flex flex-col pt-5 md:pt-0 grid-cols-2 gap-5 items-center content-center"
         >
           <input
-            className="col-span-1 px-7 py-6 rounded-lg border-4"
+            className="col-span-1 lg:px-7 lg:py-6 py-4 px-5 rounded-lg border-4"
             type="text"
             placeholder="Name"
             name="name"
@@ -61,7 +61,7 @@ const Join = ({ setShow, giveNumber }) => {
             onChange={handleChange}
           />
           <input
-            className="col-span-1 px-7 py-6 rounded-lg border-4"
+            className="col-span-1 lg:px-7 lg:py-6 py-4 px-5 rounded-lg border-4"
             type="text"
             placeholder="Country"
             name="country"
@@ -70,7 +70,7 @@ const Join = ({ setShow, giveNumber }) => {
             onChange={handleChange}
           />
           <input
-            className="col-span-2 px-7 py-6 rounded-lg border-4"
+            className="col-span-2 lg:px-7 lg:py-6 py-4 px-5 rounded-lg border-4"
             type="text"
             placeholder="E-mail"
             name="email"
@@ -81,18 +81,18 @@ const Join = ({ setShow, giveNumber }) => {
 
           <button
             type="submit"
-            className="px-14 py-4 bg-primary text-white text-xl rounded-lg"
+            className="lg:px-14 px-8 py-4 bg-primary text-white text-xl rounded-lg"
           >
             Join Now
           </button>
           <button
-            className=" px-14 py-4 bg-primary text-white text-xl rounded-lg"
+            className=" lg:px-14 px-8 py-4 bg-primary text-white text-xl rounded-lg"
             onClick={cleanUp}
           >
             Cancel
           </button>
         </form>
-        <div className="col-span-2 overflow-hidden">
+        <div className="col-span-2 overflow-hidden hidden lg:block">
           <PlaneAnim />
         </div>
       </div>
