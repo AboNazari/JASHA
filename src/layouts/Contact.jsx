@@ -59,7 +59,7 @@ const Contact = () => {
             </li>
           </ul>
           <p className="text-xl lg:px-10 lg:mt-32 mt-10 font-primary">
-            Interested in collaborating and supporting our vision ?
+            Interested in collaborating and supporting <br /> our vision ?
           </p>
         </div>
 
