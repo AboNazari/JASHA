@@ -34,8 +34,8 @@ const Navbar = () => {
           </button>
         )}
       </div>
-      <nav className={open ? "md:ml-[10%]  lg:block" : "hidden lg:block"}>
-        <ul className="flex lg:gap-40 font-primary  text-[#87D4AA] flex-col lg:flex-row">
+      <nav className={open ? "md:ml-[10%] " : "hidden lg:flex  w-[80%]"}>
+        <ul className="flex lg:gap-40 font-primary  text-[#87D4AA] flex-col lg:flex-row items-center">
           <li
             className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5 lg:my-0 "
             onClick={toggle}
@@ -46,7 +46,7 @@ const Navbar = () => {
             </a>
           </li>
           <li
-            className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5  lg:my-0 "
+            className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5  lg:my-0 w-[15rem]"
             onClick={toggle}
           >
             <a href="#quote">
@@ -55,7 +55,7 @@ const Navbar = () => {
             </a>
           </li>
           <li
-            className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5 lg:my-0 "
+            className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5 lg:my-0 w-[15rem]"
             onClick={toggle}
           >
             <a href="#warrior">
@@ -64,7 +64,7 @@ const Navbar = () => {
             </a>
           </li>
           <li
-            className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5  lg:my-0 "
+            className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5  lg:my-0 w-[15rem]"
             onClick={toggle}
           >
             <a href="#contact">
