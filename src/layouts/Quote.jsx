@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactComponent as Hat } from "../icons/hat.svg";
 
 const Quote = () => {

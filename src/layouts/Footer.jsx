@@ -1,8 +1,5 @@
 import { ReactComponent as JASHA } from "../images/JASHA.svg";
-import { ReactComponent as Facebook } from "../icons/Facebook_white.svg";
 import { ReactComponent as Instagram } from "../icons/Instagram_white.svg";
-import { ReactComponent as Telegram } from "../icons/Telegram_white.svg";
-import { ReactComponent as WhatsApp } from "../icons/WhatsApp_white.svg";
 import { ReactComponent as MasterCard } from "../icons/mastercard.svg";
 import { ReactComponent as Visa } from "../icons/visa.svg";
 import { ReactComponent as UnionPay } from "../icons/unionpay.svg";

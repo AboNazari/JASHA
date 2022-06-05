@@ -1,7 +1,4 @@
-import React from "react";
-import Button from "../components/Button";
 import { ReactComponent as Email } from "../icons/email.svg";
-import { ReactComponent as FaceBook } from "../icons/Facebook.svg";
 import { ReactComponent as Instagram } from "../icons/Instagram.svg";
 import { useState } from "react";
 import { send } from "emailjs-com";

@@ -1,6 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { ReactComponent as Girl } from "../images/Rectangle.svg";
 import Hello from "../animations/Hello";
 
 const About = () => {

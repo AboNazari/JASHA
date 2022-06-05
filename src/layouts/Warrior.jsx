@@ -1,4 +1,3 @@
-import React from "react";
 import { ReactComponent as Lightning } from "../icons/LighteningFull.svg";
 import person from "../images/Char1.jpg";
 

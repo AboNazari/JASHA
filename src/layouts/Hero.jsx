@@ -1,8 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-
 import HeroAnimation from "../animations/HeroAnim";
-import Navbar from "../components/Navbar";
+
 const Hero = () => {
   return (
     <div

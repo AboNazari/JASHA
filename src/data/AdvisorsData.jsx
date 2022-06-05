@@ -1,7 +1,7 @@
 import lucy from "../images/Advisors/lucy.jpg";
 import robin from "../images/Advisors/robin.jpeg";
 import Ayman from "../images/Advisors/ayman.jpeg";
-import abo4 from "../images/team/iska2.jpg";
+import Aiperi from "../images/Advisors/Aiperi.jpg";
 
 const AdvisorsData = [
   {
@@ -27,6 +27,14 @@ const AdvisorsData = [
     quote:
       "With the ability to understand the perceptions of trends in the space you’re working in when searching across social media, it can help with the research into the trends you’re working towards.",
     img: Ayman,
+  },
+  {
+    id: 4,
+    name: "Aiperi ",
+    position: "C5+1 Youth Council Coordinator",
+    quote:
+      "With the ability to understand the perceptions of trends in the space you’re working in when searching across social media, it can help with the research into the trends you’re working towards.",
+    img: Aiperi,
   },
 ];
 

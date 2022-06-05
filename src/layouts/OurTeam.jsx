@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TeamCard from "../components/TeamCard";
-
 import { motion } from "framer-motion";
-
 import abo from "../images/team/abo1.jpg";
 import parker from "../images/team/parker1.jpg";
 import iska from "../images/team/iska1.jpg";
@@ -10,7 +8,7 @@ import zakir from "../images/team/zakir1.jpg";
 import aizhamal from "../images/team/aizhamal1.jpg";
 import ayana from "../images/team/ayan1.jpg";
 import muniza from "../images/team/muniza1.jpg";
-import img from "../images/person.jpg";
+
 const Members = [
   {
     id: 1,
