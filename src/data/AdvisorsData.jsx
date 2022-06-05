@@ -1,6 +1,6 @@
 import lucy from "../images/Advisors/lucy.jpg";
 import robin from "../images/Advisors/robin.jpeg";
-import abo2 from "../images/team/abo3.jpg";
+import Ayman from "../images/Advisors/ayman.jpeg";
 import abo4 from "../images/team/iska2.jpg";
 
 const AdvisorsData = [
@@ -22,19 +22,11 @@ const AdvisorsData = [
   },
   {
     id: 3,
-    name: "Ashley Wayng",
-    position: "Head of Responsible investing",
+    name: "Ayman Aljarbouh",
+    position: "Assistant Professor/ Ph.D. doctorate in Computer Science",
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est voluptatum deleniti ipsum molestias amet similique obcaecati repellendus officia ipsa optio id aspernatur voluptatem, voluptates nulla inventore officiis fugit sapiente nostrum",
-    img: abo2,
-  },
-  {
-    id: 4,
-    name: "Ashley Wayng",
-    position: "Head of Responsible investing",
-    quote:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est voluptatum deleniti ipsum molestias amet similique obcaecati repellendus officia ipsa optio id aspernatur voluptatem, voluptates nulla inventore officiis fugit sapiente nostrum",
-    img: abo4,
+      "With the ability to understand the perceptions of trends in the space you’re working in when searching across social media, it can help with the research into the trends you’re working towards.",
+    img: Ayman,
   },
 ];
 
