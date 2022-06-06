@@ -33,7 +33,7 @@ const AdvisorsData = [
     name: "Aiperi ",
     position: "C5+1 Youth Council Coordinator",
     quote:
-      "With the ability to understand the perceptions of trends in the space you’re working in when searching across social media, it can help with the research into the trends you’re working towards.",
+      "C5+1 Youth Council supports the initiatives of young leaders across Central Asia and Afghanistan in their creative solutions and contributions to the regional issues. The “Jasha” platform has a significant value as it promotes sustainable and a better World for all.",
     img: Aiperi,
   },
 ];
