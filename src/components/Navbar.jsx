@@ -17,7 +17,9 @@ const Navbar = () => {
   return (
     <div className="flex items-center w-full max-h-[15%] fixed top-0 left-0 px-[5vw] shadow-md bg-white md:pt-10 pt-5 z-50 md:pb-5 flex-col lg:flex-row gap-[10%] ">
       <div className="flex flex-row justify-between px-5 max-w-[1280px] ">
-        <Logo className="w-[150px] md:w-[150px] lg:border-r-4 md:pr-10 pr-15 lg:mr-0 mr-20 border-primary" />
+        <a href="/">
+          <Logo className="w-[150px] md:w-[150px] lg:border-r-4 md:pr-10 pr-15 lg:mr-0 mr-20 border-primary" />
+        </a>
         {open ? (
           <button
             className="p-6 text-white text-2xl lg:hidden"
