@@ -25,12 +25,12 @@ const Footer = () => {
             <a href="#Counter">Join Us</a> <a href="#about">About Us</a>
           </p>
 
-          <div className="flex  justify-center gap-3 mt-2">
+          {/* <div className="flex  justify-center gap-3 mt-2">
             <MasterCard />
             <Visa />
             <UnionPay />
             <Crypto />
-          </div>
+          </div> */}
           <p className="mt-8 font-primary text-grayX">Copyright@jasha, 2022</p>
         </div>
         {/* Third Section */}

@@ -15,9 +15,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center w-full h-auto fixed top-0 left-0 px-[5vw] shadow-md bg-white md:pt-10 pt-5 z-50 md:pb-5 flex-col lg:flex-row gap-[10%] ">
-      <div className="flex flex-row justify-between px-5 ">
-        <Logo className="w-[150px] md:w-[200px] lg:border-r-4 md:pr-10 pr-15 lg:mr-0 mr-20 border-primary" />
+    <div className="flex items-center w-full max-h-[15%] fixed top-0 left-0 px-[5vw] shadow-md bg-white md:pt-10 pt-5 z-50 md:pb-5 flex-col lg:flex-row gap-[10%] ">
+      <div className="flex flex-row justify-between px-5 max-w-[1280px] ">
+        <Logo className="w-[150px] md:w-[150px] lg:border-r-4 md:pr-10 pr-15 lg:mr-0 mr-20 border-primary" />
         {open ? (
           <button
             className="p-6 text-white text-2xl lg:hidden"
@@ -34,14 +34,14 @@ const Navbar = () => {
           </button>
         )}
       </div>
-      <nav className={open ? "md:ml-[10%] " : "hidden lg:flex  "}>
-        <ul className="flex lg:gap-[10rem] font-primary  text-[#87D4AA] flex-col lg:flex-row items-center">
+      <nav className={open ? "md:ml-[10%] " : "hidden lg:flex m-auto "}>
+        <ul className="flex lg:gap-[6rem] font-primary  text-[#87D4AA] flex-col lg:flex-row items-center">
           <li
             className="text-center text-xl flex flex-col justify-center hover:text-[#304F45] duration-500 my-5 lg:my-0 "
             onClick={toggle}
           >
             <a href="#home">
-              <Home className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[40px] lg:h-[80px]" />
+              <Home className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[20px] lg:h-[30px]" />
               Home
             </a>
           </li>
@@ -50,7 +50,7 @@ const Navbar = () => {
             onClick={toggle}
           >
             <a href="#quote">
-              <Hat className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[40px] lg:h-[80px]" />
+              <Hat className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[20px] lg:h-[30px]" />
               <p className="pt-3 tracking-wider">Quote Of the Day</p>
             </a>
           </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
             onClick={toggle}
           >
             <a href="#warrior">
-              <Lightning className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[40px] lg:h-[80px]" />
+              <Lightning className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[20px] lg:h-[30px]" />
               <p className="pt-3 tracking-wider">Warrior Of the Week</p>
             </a>
           </li>
@@ -68,7 +68,7 @@ const Navbar = () => {
             onClick={toggle}
           >
             <a href="#contact">
-              <Envelope className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[40px] lg:h-[80px]" />
+              <Envelope className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[20px] lg:h-[30px]" />
               <p className="pt-3 tracking-wider"> Contact Us</p>
             </a>
           </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
             onClick={toggle}
           >
             <a href="#about">
-              <Book className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[40px] lg:h-[80px]" />
+              <Book className="m-auto duration-500 hover:fill-[#304F45] fill-[#87D4AA] h-[20px] lg:h-[30px]" />
               <p className="pt-3 tracking-wider">About</p>
             </a>
           </li>

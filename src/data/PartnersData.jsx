@@ -22,7 +22,7 @@ const PartnersData = [
     img: Council,
     name: "American Council for International Education",
     describtion: "The main and first partner",
-    link: "https://www.americancouncils.org/",
+    link: "https://kyrgyzstan.americancouncils.org/",
   },
 ];
 

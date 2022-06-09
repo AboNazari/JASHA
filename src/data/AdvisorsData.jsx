@@ -15,7 +15,7 @@ const AdvisorsData = [
   {
     id: 2,
     name: "Robin Higgins",
-    position: "University Counsellor/ Master of Counseling psychology",
+    position: "University Counsellor/ Master in Counseling psychology",
     quote:
       "Feelings of wellbeing are fundamental to the overall health of an individual, enabling them to successfully overcome difficulties and achieve what they want out of life.",
     img: robin,

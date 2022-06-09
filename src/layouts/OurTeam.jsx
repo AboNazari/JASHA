@@ -18,38 +18,38 @@ const Members = [
   },
 
   {
-    id: 3,
+    id: 2,
     image: parker,
     name: "Parker ",
     role: "Creative Team Lead",
   },
   {
-    id: 4,
+    id: 3,
     image: iska,
     name: "Iskander ",
     role: "Creative Designer",
   },
 
   {
-    id: 5,
+    id: 4,
     image: aizhamal,
     name: "Aizhamal ",
     role: "Product Manager",
   },
   {
-    id: 6,
+    id: 5,
     image: zakir,
     name: "Zakir Hussain ",
     role: "Finance Officer",
   },
   {
-    id: 7,
+    id: 6,
     image: ayana,
     name: " Aynana ",
     role: "Social Media Manager",
   },
   {
-    id: 8,
+    id: 7,
     image: muniza,
     name: "Muniza ",
     role: "Content Creator ",
@@ -79,7 +79,7 @@ const OurTeam = () => {
       ? {
           dragConstraints: { right: 0, left: -2050 },
           whileTap: { cursor: "grabbing" },
-          dragElastic: 0.2,
+          dragElastic: 0.4,
           drag: "x",
         }
       : {};
