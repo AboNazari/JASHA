@@ -12,7 +12,7 @@ import Join from "../components/Join";
 import Advisors from "../layouts/Advisors";
 import Partners from "../layouts/Partners";
 import Footer from "../layouts/Footer";
-import Navbar from "../components/Navbar";
+import NavbarX from "../components/NavbarX";
 import Warrior from "../layouts/Warrior";
 import Quote from "../layouts/Quote";
 
@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
+      <NavbarX />
       <Hero />
       <About />
       <Benefits />
