@@ -14,21 +14,13 @@ const About = () => {
           <Hello />
         </div>
         <div className="lg:w-1/2 p-4 text-lg font-[Roboto] lg:pt-16 leading-10">
-          “Jasha” is a social media platform for public exchange of posts
-          (texts, photos, videos, music) aimed at publishing notes in the form
-          of blogs and articles about conscious living. In Jasha, all posts
-          focus on topics around conscious living: eco-friendly life style,
-          mental and physical wellbeing, and personal growth.
+          “Jasha” is a project planned to be a social media platform for youth
+          of Central Asia especially Kyrgyzstan, to facilitate communication and
+          exchange of information and ideas about conscious living. In Jasha,
+          all posts will be focused on topics around conscious living:
+          eco-friendly lifestyles, sustainable development, mental and physical
+          wellbeing, and personal growth.
           <br />
-          <p className="lg:block hidden">
-            The social media platform Jasha is designed for Central Asian youth
-            to create social change and support their development as a community
-            and as individuals. The platform should be publicly available to any
-            mobile internet user to create and publish posts on topics such as
-            conscious living, eco-friendly lifestyles, mental and physical
-            wellbeing, and personal growth. Languages of the platform: English,
-            Russian, and Kyrgyz. 
-          </p>
           <br />
           Jasha welcomes everyone, regardless of race, age, ethnicity, religion,
           gender, sexual identity, or any other affiliation.

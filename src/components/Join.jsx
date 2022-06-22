@@ -83,7 +83,7 @@ const Join = ({ setShow, giveNumber }) => {
             type="submit"
             className="lg:px-14 px-8 py-4 bg-primary text-white text-xl rounded-lg"
           >
-            Join Now
+            Join
           </button>
           <button
             className=" lg:px-14 px-8 py-4 bg-primary text-white text-xl rounded-lg"

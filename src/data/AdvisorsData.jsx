@@ -1,6 +1,6 @@
 import lucy from "../images/Advisors/lucy.jpg";
-import robin from "../images/Advisors/robin.jpeg";
-import Ayman from "../images/Advisors/ayman.jpeg";
+import robin from "../images/Advisors/robin.jpg";
+import Ayman from "../images/Advisors/ayman.jpg";
 import Aiperi from "../images/Advisors/Aiperi.jpg";
 
 const AdvisorsData = [
@@ -30,7 +30,7 @@ const AdvisorsData = [
   },
   {
     id: 4,
-    name: "Aiperi ",
+    name: "Aiperi Iskakova",
     position: "C5+1 Youth Council Coordinator",
     quote:
       "C5+1 Youth Council supports the initiatives of young leaders across Central Asia and Afghanistan in their creative solutions and contributions to the regional issues. The “Jasha” platform has a significant value as it promotes sustainable and a better World for all.",

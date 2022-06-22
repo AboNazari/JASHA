@@ -23,7 +23,7 @@ const Warrior = () => {
             Aizhamal Zhetigenova
           </p>
         </div>
-        <div className="lg:w-2/3  rounded-br-3xl rounded-xl text-xl text-white lg:p-12  font-primary  bg-gradient-to-br from-primary to-dark">
+        <div className="lg:w-2/3  rounded-br-3xl rounded-xl text-xl text-white lg:p-12 p-5 font-primary  bg-gradient-to-br from-primary to-dark">
           <div className="pb-5 lg:text-2xl text-xl">
             <div className=" bg-white w-[7rem] h-[3px]"></div>
             <h3 className=" text-3xl pb-10 pt-4">QUOTE</h3>

@@ -10,19 +10,19 @@ const cardList = [
     id: 1,
     icon: <Team className="w-10" />,
     title: "A Movement not just an App",
-    text: "Towards sustainable and a better world for everyone, where the knowledge will be free and open source.",
+    text: "Towards sustainable and a better world for everyone, where youth have chance to exchange toughts and ideas.",
   },
   {
     id: 2,
     icon: <TV className="w-10" />,
-    title: "Nothing fake, Real Life Social Media",
-    text: "Stories you share will come from real life, no filter, no pulish, no edite. Reality is beautiful.",
+    title: "Educate yourself and your community",
+    text: "You can contribute to the educating your community by posting your thoughts and ideas in the concerned topics.",
   },
   {
     id: 3,
     icon: <Like className="w-10" />,
     title: "Dont feel bad being online",
-    text: "Your time is the most valuebale resource of humanity. It should be used to create something better for future generations.",
+    text: "Your time is the most valuebale resource of yours and humanity in general. you can learn and grow using this asset of yours.",
   },
   {
     id: 4,

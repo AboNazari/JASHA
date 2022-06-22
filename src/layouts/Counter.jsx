@@ -13,7 +13,7 @@ const Counter = ({ setShow }) => {
           </p>
           <button
             onClick={() => setShow(true)}
-            className="md:px-16 md:py-5 m-auto font-primary rounded-full bg-white text-black md:text-4xl py-2 px-5 text-2xl"
+            className="md:px-16 md:py-5 m-auto font-primary rounded-full bg-white text-black md:text-4xl py-2 px-5 text-2xl mt-5"
           >
             JOIN US
           </button>
@@ -26,17 +26,12 @@ const Counter = ({ setShow }) => {
           <h3 className="md:text-4xl text-3xl text-primary pb-6 font-primary ">
             What's our movement?
           </h3>
-          <p className="text-xl">
+          <p className="lg:text-xl text-lg">
             Jasha is intended to be a community-based social media platform
             which encourages social change through a userbase that publishes
             posts about conscious living. The reason that we opted for this term
             was that the word "Jasha” is taken from Kyrgyz origin which means
-            easygoing, highly sociable and having deep affection for life. As
-            environmental activists are concerned about the negative impacts of
-            human action have caused grievous influence on the planet and its
-            inhabitants therefore Jasha’s friendly nature helps make lots of
-            eco-friendly friends in life and argues for implementations of
-            sustainable territories. 
+            easygoing, highly sociable and having deep affection for life.
           </p>
         </div>
       </div>
