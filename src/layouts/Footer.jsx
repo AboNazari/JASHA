@@ -41,7 +41,7 @@ const Footer = () => {
           <p className=" text-lg font-primary text-left flex">
             <Email />
             <a href="mailto:public@jasha.life" className="ml-1">
-              public@jasha.life
+              jasha.movement@gmail.com
             </a>
           </p>
           <h4 className=" text-grayX  lg:text-2xl text-xl mt-8 text-left">

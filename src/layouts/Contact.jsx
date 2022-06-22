@@ -12,7 +12,7 @@ const Contact = () => {
   });
   const onSubmit = (e) => {
     e.preventDefault();
-    send("service_hawx44n", "template_dyu1o6v", toSend, "Vp2nB-WOSzwvwq9du")
+    send("service_3npqqem", "template_mnl06bq", toSend, "69GecIkoClHs_iZtP")
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
       })
@@ -45,13 +45,13 @@ const Contact = () => {
           <ul className="lg:my-28 mt-10 lg:mx-10 md:text-2xl text-xl leading-relaxed font-primary">
             <li>
               <a href="mailto:public@jahsa.life" className="flex items-center">
-                <Email className="mr-4 mt-2" /> public@jahsa.life
+                <Email className="mr-4 mt-2" /> jasha.movement@gmail.com
               </a>
             </li>
             <li>
               <a
                 href="https://www.instagram.com/jasha.life/"
-                className="flex items-center  mt-4"
+                className="flex items-center mt-4"
                 target="_blank"
               >
                 <Instagram className="mr-4 mt-2" /> jasha.life

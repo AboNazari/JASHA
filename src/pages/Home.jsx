@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Benefits from "../layouts/Benefits";
-
+import { useSelector } from "react-redux";
 //layouts
 import Hero from "../layouts/Hero";
 import About from "../layouts/About";
@@ -17,8 +17,7 @@ import Warrior from "../layouts/Warrior";
 import Quote from "../layouts/Quote";
 
 const Home = () => {
-  const [show, setShow] = useState(false);
-
+  const show = useSelector((state) => state.show);
   return (
     <div>
       <NavbarX />
@@ -30,8 +29,8 @@ const Home = () => {
       <Warrior />
       <Quote />
       <Partners />
-      <Counter setShow={setShow} />
-      {show && <Join setShow={setShow} />}
+      <Counter />
+      {show && <Join />}
       <Contact />
       <FAQ />
       <Footer />

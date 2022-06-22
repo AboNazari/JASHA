@@ -1,6 +1,10 @@
 import { ReactComponent as People } from "../images/peopleW.svg";
-
-const Counter = ({ setShow }) => {
+import { useDispatch } from "react-redux";
+const Counter = () => {
+  const dispatch = useDispatch();
+  const toggleShow = () => {
+    dispatch({ type: "open" });
+  };
   return (
     <div
       id="Counter"
@@ -12,7 +16,7 @@ const Counter = ({ setShow }) => {
             Become part of the <br /> movement!
           </p>
           <button
-            onClick={() => setShow(true)}
+            onClick={toggleShow}
             className="md:px-16 md:py-5 m-auto font-primary rounded-full bg-white text-black md:text-4xl py-2 px-5 text-2xl mt-5"
           >
             JOIN US
